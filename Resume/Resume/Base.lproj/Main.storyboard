@@ -72,6 +72,7 @@ Accusamus pariatur tempor hoodie occaecat, synth pork belly umami deserunt quino
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="backgroundImageView" destination="3lw-Ee-2af" id="yqD-jJ-2sj"/>
                         <outlet property="descriptionTextView" destination="AaZ-bC-kcq" id="WIb-3e-dUZ"/>
                         <outlet property="scrollView" destination="Gy2-Et-efd" id="1th-96-Lpo"/>
                     </connections>
