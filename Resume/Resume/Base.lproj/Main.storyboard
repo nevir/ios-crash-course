@@ -7,7 +7,7 @@
         <!--Profile View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" userLabel="Profile View Controller" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" userLabel="Profile View Controller" customClass="ProfileViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS" userLabel="Root View">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -50,26 +50,31 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="AaZ-bC-kcq" userLabel="Description">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" selectable="NO" id="AaZ-bC-kcq" userLabel="Description">
                                         <rect key="frame" x="0.0" y="195" width="320" height="373"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <mutableString key="text">Scenester tousled Banksy post-ironic. Odd Future odio cliche flannel Pitchfork typewriter. Art party pop-up chia PBR&amp;B pariatur sed. Fingerstache sriracha bitters Pitchfork Godard mixtape est consequat Williamsburg 90's tote bag. Pug pop-up assumenda, disrupt consequat VHS wolf. Yr you probably haven't heard of them fixie dreamcatcher pariatur readymade, whatever bitters laborum fugiat ex keytar slow-carb Wes Anderson squid. Cray ex lomo drinking vinegar.
+                                        <string key="text">Scenester tousled Banksy post-ironic. Odd Future odio cliche flannel Pitchfork typewriter. Art party pop-up chia PBR&amp;B pariatur sed. Fingerstache sriracha bitters Pitchfork Godard mixtape est consequat Williamsburg 90's tote bag. Pug pop-up assumenda, disrupt consequat VHS wolf. Yr you probably haven't heard of them fixie dreamcatcher pariatur readymade, whatever bitters laborum fugiat ex keytar slow-carb Wes Anderson squid. Cray ex lomo drinking vinegar.
 
-Accusamus pariatur tempor hoodie occaecat, synth pork belly umami deserunt quinoa dolor id whatever sint. Fap Truffaut adipisicing biodiesel, High Life raw denim laborum hella pork belly meggings. PBR shabby chic Marfa ex, sed pickled anim mollit. Neutra bespoke single-origin coffee sriracha church-key id sint. Esse hella 90's, Pinterest fingerstache actually ugh fanny pack meh tempor ullamco occupy quinoa Cosby sweater post-ironic. Tempor irure exercitation, seitan sartorial esse fanny pack adipisicing veniam kitsch Austin. Et locavore chia, typewriter incididunt tempor seitan twee quis ad wolf iPhone.  Excepteur street art biodiesel +1, keffiyeh sartorial quinoa nesciunt. Et messenger bag labore typewriter skateboard before they sold out. Sed twee ennui, VHS synth chillwave aute DIY. Marfa retro bitters, raw denim kogi banjo selfies deserunt vero. Messenger bag craft beer qui meggings brunch. Cray photo booth trust fund, meggings nesciunt quinoa McSweeney's sed semiotics Wes Anderson seitan. Ea eiusmod banjo authentic cupidatat selfies.</mutableString>
+Accusamus pariatur tempor hoodie occaecat, synth pork belly umami deserunt quinoa dolor id whatever sint. Fap Truffaut adipisicing biodiesel, High Life raw denim laborum hella pork belly meggings. PBR shabby chic Marfa ex, sed pickled anim mollit. Neutra bespoke single-origin coffee sriracha church-key id sint. Esse hella 90's, Pinterest fingerstache actually ugh fanny pack meh tempor ullamco occupy quinoa Cosby sweater post-ironic. Tempor irure exercitation, seitan sartorial esse fanny pack adipisicing veniam kitsch Austin. Et locavore chia, typewriter incididunt tempor seitan twee quis ad wolf iPhone.  Excepteur street art biodiesel +1, keffiyeh sartorial quinoa nesciunt. Et messenger bag labore typewriter skateboard before they sold out. Sed twee ennui, VHS synth chillwave aute DIY. Marfa retro bitters, raw denim kogi banjo selfies deserunt vero. Messenger bag craft beer qui meggings brunch. Cray photo booth trust fund, meggings nesciunt quinoa McSweeney's sed semiotics Wes Anderson seitan. Ea eiusmod banjo authentic cupidatat selfies.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="paP-fG-5RZ">
-                                        <rect key="frame" x="0.0" y="-24" width="320" height="44"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                        <items/>
-                                    </toolbar>
                                 </subviews>
+                                <inset key="scrollIndicatorInsets" minX="0.0" minY="20" maxX="0.0" maxY="0.0"/>
                             </scrollView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="paP-fG-5RZ">
+                                <rect key="frame" x="0.0" y="-24" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items/>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="descriptionTextView" destination="AaZ-bC-kcq" id="WIb-3e-dUZ"/>
+                        <outlet property="scrollView" destination="Gy2-Et-efd" id="1th-96-Lpo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

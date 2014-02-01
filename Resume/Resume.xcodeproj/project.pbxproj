@@ -14,7 +14,7 @@
 		889B57BC189CD852009CDED9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 889B57BB189CD852009CDED9 /* main.m */; };
 		889B57C0189CD852009CDED9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 889B57BF189CD852009CDED9 /* AppDelegate.m */; };
 		889B57C3189CD852009CDED9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 889B57C1189CD852009CDED9 /* Main.storyboard */; };
-		889B57C6189CD852009CDED9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 889B57C5189CD852009CDED9 /* ViewController.m */; };
+		889B57C6189CD852009CDED9 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 889B57C5189CD852009CDED9 /* ProfileViewController.m */; };
 		889B57C8189CD852009CDED9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 889B57C7189CD852009CDED9 /* Images.xcassets */; };
 		889B57CF189CD852009CDED9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 889B57CE189CD852009CDED9 /* XCTest.framework */; };
 		889B57D0189CD852009CDED9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 889B57AF189CD852009CDED9 /* Foundation.framework */; };
@@ -45,8 +45,8 @@
 		889B57BE189CD852009CDED9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		889B57BF189CD852009CDED9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		889B57C2189CD852009CDED9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		889B57C4189CD852009CDED9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		889B57C5189CD852009CDED9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		889B57C4189CD852009CDED9 /* ProfileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		889B57C5189CD852009CDED9 /* ProfileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 		889B57C7189CD852009CDED9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		889B57CD189CD852009CDED9 /* ResumeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ResumeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		889B57CE189CD852009CDED9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -112,12 +112,13 @@
 		889B57B5189CD852009CDED9 /* Resume */ = {
 			isa = PBXGroup;
 			children = (
+				889B57E4189D41FE009CDED9 /* View Controllers */,
+				889B57E5189D423F009CDED9 /* Views */,
+				889B57E6189D4244009CDED9 /* Models */,
 				889B57BE189CD852009CDED9 /* AppDelegate.h */,
 				889B57BF189CD852009CDED9 /* AppDelegate.m */,
-				889B57C1189CD852009CDED9 /* Main.storyboard */,
-				889B57C4189CD852009CDED9 /* ViewController.h */,
-				889B57C5189CD852009CDED9 /* ViewController.m */,
 				889B57C7189CD852009CDED9 /* Images.xcassets */,
+				889B57C1189CD852009CDED9 /* Main.storyboard */,
 				889B57B6189CD852009CDED9 /* Supporting Files */,
 			);
 			path = Resume;
@@ -150,6 +151,29 @@
 				889B57D7189CD852009CDED9 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		889B57E4189D41FE009CDED9 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				889B57C4189CD852009CDED9 /* ProfileViewController.h */,
+				889B57C5189CD852009CDED9 /* ProfileViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		889B57E5189D423F009CDED9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		889B57E6189D4244009CDED9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,7 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				889B57C6189CD852009CDED9 /* ViewController.m in Sources */,
+				889B57C6189CD852009CDED9 /* ProfileViewController.m in Sources */,
 				889B57C0189CD852009CDED9 /* AppDelegate.m in Sources */,
 				889B57BC189CD852009CDED9 /* main.m in Sources */,
 			);
