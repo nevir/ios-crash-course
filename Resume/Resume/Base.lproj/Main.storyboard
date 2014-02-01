@@ -18,7 +18,7 @@
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ProfileBackground" id="3lw-Ee-2af" userLabel="Background">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <view contentMode="scaleToFill" id="xJW-9y-Ooz" userLabel="Photo Container">
                                         <rect key="frame" x="10" y="77" width="110" height="110"/>
@@ -52,7 +52,7 @@
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="AaZ-bC-kcq" userLabel="Description">
                                         <rect key="frame" x="0.0" y="195" width="320" height="373"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <mutableString key="text">Scenester tousled Banksy post-ironic. Odd Future odio cliche flannel Pitchfork typewriter. Art party pop-up chia PBR&amp;B pariatur sed. Fingerstache sriracha bitters Pitchfork Godard mixtape est consequat Williamsburg 90's tote bag. Pug pop-up assumenda, disrupt consequat VHS wolf. Yr you probably haven't heard of them fixie dreamcatcher pariatur readymade, whatever bitters laborum fugiat ex keytar slow-carb Wes Anderson squid. Cray ex lomo drinking vinegar.
 
@@ -60,6 +60,11 @@ Accusamus pariatur tempor hoodie occaecat, synth pork belly umami deserunt quino
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
+                                    <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="paP-fG-5RZ">
+                                        <rect key="frame" x="0.0" y="-24" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <items/>
+                                    </toolbar>
                                 </subviews>
                             </scrollView>
                         </subviews>
