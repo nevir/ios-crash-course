@@ -24,6 +24,7 @@
 		88BD842E189E1944001962DC /* SocialInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BD842D189E1944001962DC /* SocialInfo.m */; };
 		88BD8431189E2201001962DC /* SocialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BD8430189E2201001962DC /* SocialViewController.m */; };
 		88BD8434189E2F43001962DC /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BD8433189E2F43001962DC /* WebViewController.m */; };
+		88BD8437189E44BB001962DC /* EmailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BD8436189E44BB001962DC /* EmailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,8 @@
 		88BD8430189E2201001962DC /* SocialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialViewController.m; sourceTree = "<group>"; };
 		88BD8432189E2F43001962DC /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		88BD8433189E2F43001962DC /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		88BD8435189E44BB001962DC /* EmailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmailViewController.h; sourceTree = "<group>"; };
+		88BD8436189E44BB001962DC /* EmailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +174,8 @@
 				88BD8430189E2201001962DC /* SocialViewController.m */,
 				88BD8432189E2F43001962DC /* WebViewController.h */,
 				88BD8433189E2F43001962DC /* WebViewController.m */,
+				88BD8435189E44BB001962DC /* EmailViewController.h */,
+				88BD8436189E44BB001962DC /* EmailViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -288,6 +293,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88BD8437189E44BB001962DC /* EmailViewController.m in Sources */,
 				889B57C6189CD852009CDED9 /* ProfileViewController.m in Sources */,
 				88BD8434189E2F43001962DC /* WebViewController.m in Sources */,
 				889B57C0189CD852009CDED9 /* AppDelegate.m in Sources */,

@@ -168,10 +168,10 @@ Accusamus pariatur tempor hoodie occaecat, synth pork belly umami deserunt quino
             </objects>
             <point key="canvasLocation" x="997" y="-168"/>
         </scene>
-        <!--View Controller - Email Me-->
+        <!--Email View Controller - Email Me-->
         <scene sceneID="2nr-ux-2YQ">
             <objects>
-                <viewController id="Mqo-qm-8tg" sceneMemberID="viewController">
+                <viewController id="Mqo-qm-8tg" customClass="EmailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hPh-Zt-hIC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -205,8 +205,16 @@ Accusamus pariatur tempor hoodie occaecat, synth pork belly umami deserunt quino
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Email Me" id="wbx-NF-2H7">
-                        <barButtonItem key="rightBarButtonItem" title="Send" id="gr3-D3-7ec"/>
+                        <barButtonItem key="rightBarButtonItem" title="Send" id="gr3-D3-7ec">
+                            <connections>
+                                <action selector="send:" destination="Mqo-qm-8tg" id="8p3-sz-AFC"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="bodyTextView" destination="bDT-Ip-Y0l" id="IHp-pv-xcb"/>
+                        <outlet property="senderTextField" destination="o6s-0B-lye" id="v3e-c3-7V2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Icq-qY-8Ml" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
