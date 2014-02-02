@@ -8,6 +8,7 @@
 
 #import "SocialViewController.h"
 #import "SocialInfo.h"
+#import "WebViewController.h"
 
 @interface SocialViewController ()
 
@@ -106,16 +107,24 @@
 }
 */
 
-/*
 #pragma mark - Navigation
 
 // In a story board-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
+    // Segue to show a social network's page in a webview.
+    if ([segue.destinationViewController isKindOfClass:[WebViewController class]] &&
+        [sender isKindOfClass:[UITableViewCell class]]) {
+        // Note that we are free to cast the sender and destination now that we know they are of the
+        // appropriate classes.
+        UITableViewCell *sourceCell = (UITableViewCell*)sender;
+        WebViewController *destination = (WebViewController*)segue.destinationViewController;
 
- */
+        NSInteger row = [self.tableView indexPathForCell:sourceCell].row;
+        SocialInfo *info = [SocialInfo allSocialInfo][row];
+        destination.title = info.title;
+        destination.url = info.url;
+    }
+}
 
 @end

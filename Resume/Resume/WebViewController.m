@@ -31,7 +31,6 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    self.url = @"https://google.com";
     [self refresh:nil];
 }
 
