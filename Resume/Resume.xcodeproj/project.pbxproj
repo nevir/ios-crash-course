@@ -21,6 +21,7 @@
 		889B57D1189CD852009CDED9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 889B57B3189CD852009CDED9 /* UIKit.framework */; };
 		889B57D9189CD852009CDED9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 889B57D7189CD852009CDED9 /* InfoPlist.strings */; };
 		889B57DB189CD852009CDED9 /* ResumeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 889B57DA189CD852009CDED9 /* ResumeTests.m */; };
+		88BD842E189E1944001962DC /* SocialInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BD842D189E1944001962DC /* SocialInfo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		889B57D6189CD852009CDED9 /* ResumeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ResumeTests-Info.plist"; sourceTree = "<group>"; };
 		889B57D8189CD852009CDED9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		889B57DA189CD852009CDED9 /* ResumeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ResumeTests.m; sourceTree = "<group>"; };
+		88BD842C189E1944001962DC /* SocialInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialInfo.h; sourceTree = "<group>"; };
+		88BD842D189E1944001962DC /* SocialInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialInfo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +175,8 @@
 		889B57E6189D4244009CDED9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				88BD842C189E1944001962DC /* SocialInfo.h */,
+				88BD842D189E1944001962DC /* SocialInfo.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -275,6 +280,7 @@
 			files = (
 				889B57C6189CD852009CDED9 /* ProfileViewController.m in Sources */,
 				889B57C0189CD852009CDED9 /* AppDelegate.m in Sources */,
+				88BD842E189E1944001962DC /* SocialInfo.m in Sources */,
 				889B57BC189CD852009CDED9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
