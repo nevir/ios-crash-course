@@ -61,7 +61,8 @@ Accusamus pariatur tempor hoodie occaecat, synth pork belly umami deserunt quino
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
-                                <inset key="scrollIndicatorInsets" minX="0.0" minY="20" maxX="0.0" maxY="0.0"/>
+                                <inset key="contentInset" minX="0.0" minY="0.0" maxX="0.0" maxY="50"/>
+                                <inset key="scrollIndicatorInsets" minX="0.0" minY="20" maxX="0.0" maxY="50"/>
                             </scrollView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="paP-fG-5RZ">
                                 <rect key="frame" x="0.0" y="-24" width="320" height="44"/>
