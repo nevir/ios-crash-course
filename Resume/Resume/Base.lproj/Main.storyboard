@@ -95,7 +95,7 @@ Accusamus pariatur tempor hoodie occaecat, synth pork belly umami deserunt quino
                     </tabBar>
                     <connections>
                         <segue destination="vXZ-lx-hvc" kind="relationship" relationship="viewControllers" id="Wrw-c6-8xe"/>
-                        <segue destination="tSd-Ah-i8K" kind="relationship" relationship="viewControllers" id="W4l-nW-avL"/>
+                        <segue destination="fmf-GO-IqY" kind="relationship" relationship="viewControllers" id="W4l-nW-avL"/>
                         <segue destination="zn2-Ub-0vj" kind="relationship" relationship="viewControllers" id="scr-xg-Ppk"/>
                     </connections>
                 </tabBarController>
@@ -112,15 +112,15 @@ Accusamus pariatur tempor hoodie occaecat, synth pork belly umami deserunt quino
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SocialInfoCell" textLabel="TGb-Ik-xto" style="IBUITableViewCellStyleDefault" id="u5u-Tk-9hM">
-                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SocialInfoCell" textLabel="TGb-Ik-xto" style="IBUITableViewCellStyleDefault" id="u5u-Tk-9hM">
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="u5u-Tk-9hM" id="tOj-Hz-63Y">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TGb-Ik-xto">
-                                            <rect key="frame" x="15" y="0.0" width="290" height="43"/>
+                                            <rect key="frame" x="15" y="0.0" width="270" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -128,6 +128,9 @@ Accusamus pariatur tempor hoodie occaecat, synth pork belly umami deserunt quino
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="Ew7-hx-Ngn" kind="push" id="QhK-3b-drx"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -135,11 +138,26 @@ Accusamus pariatur tempor hoodie occaecat, synth pork belly umami deserunt quino
                             <outlet property="delegate" destination="tSd-Ah-i8K" id="hzv-5f-pz4"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Contact" image="ContactTab" id="ndg-wF-C55"/>
+                    <navigationItem key="navigationItem" title="Contact" id="KOH-9S-cfG"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uww-sl-I65" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="471" y="-168"/>
+            <point key="canvasLocation" x="997" y="-168"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="rdQ-31-7CZ">
+            <objects>
+                <viewController id="Ew7-hx-Ngn" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eqp-2c-erO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ufe-x2-SuJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oNp-ZY-YKB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1504" y="-168"/>
         </scene>
         <!--View Controller - Portfolio-->
         <scene sceneID="d72-4C-A8f">
@@ -155,6 +173,25 @@ Accusamus pariatur tempor hoodie occaecat, synth pork belly umami deserunt quino
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aiw-Zq-scT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="471" y="586"/>
+        </scene>
+        <!--Navigation Controller - Contact-->
+        <scene sceneID="kMv-dn-wvz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fmf-GO-IqY" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Contact" image="ContactTab" id="ndg-wF-C55"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4tH-ea-5bH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="tSd-Ah-i8K" kind="relationship" relationship="rootViewController" id="Klh-cP-9Qn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fTE-ML-x39" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="471" y="-168"/>
         </scene>
     </scenes>
     <resources>
