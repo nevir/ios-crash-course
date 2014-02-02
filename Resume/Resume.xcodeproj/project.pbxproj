@@ -23,6 +23,7 @@
 		889B57DB189CD852009CDED9 /* ResumeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 889B57DA189CD852009CDED9 /* ResumeTests.m */; };
 		88BD842E189E1944001962DC /* SocialInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BD842D189E1944001962DC /* SocialInfo.m */; };
 		88BD8431189E2201001962DC /* SocialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BD8430189E2201001962DC /* SocialViewController.m */; };
+		88BD8434189E2F43001962DC /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BD8433189E2F43001962DC /* WebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,8 @@
 		88BD842D189E1944001962DC /* SocialInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialInfo.m; sourceTree = "<group>"; };
 		88BD842F189E2201001962DC /* SocialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialViewController.h; sourceTree = "<group>"; };
 		88BD8430189E2201001962DC /* SocialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialViewController.m; sourceTree = "<group>"; };
+		88BD8432189E2F43001962DC /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		88BD8433189E2F43001962DC /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +169,8 @@
 				889B57C5189CD852009CDED9 /* ProfileViewController.m */,
 				88BD842F189E2201001962DC /* SocialViewController.h */,
 				88BD8430189E2201001962DC /* SocialViewController.m */,
+				88BD8432189E2F43001962DC /* WebViewController.h */,
+				88BD8433189E2F43001962DC /* WebViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -284,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				889B57C6189CD852009CDED9 /* ProfileViewController.m in Sources */,
+				88BD8434189E2F43001962DC /* WebViewController.m in Sources */,
 				889B57C0189CD852009CDED9 /* AppDelegate.m in Sources */,
 				88BD8431189E2201001962DC /* SocialViewController.m in Sources */,
 				88BD842E189E1944001962DC /* SocialInfo.m in Sources */,

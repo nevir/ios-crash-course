@@ -87,7 +87,7 @@ Accusamus pariatur tempor hoodie occaecat, synth pork belly umami deserunt quino
         <scene sceneID="9i5-yr-klP">
             <objects>
                 <tabBarController definesPresentationContext="YES" id="dQN-Yq-3nS" sceneMemberID="viewController">
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="IDh-tn-Bhs">
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -144,16 +144,32 @@ Accusamus pariatur tempor hoodie occaecat, synth pork belly umami deserunt quino
             </objects>
             <point key="canvasLocation" x="997" y="-168"/>
         </scene>
-        <!--View Controller-->
+        <!--Web View Controller-->
         <scene sceneID="rdQ-31-7CZ">
             <objects>
-                <viewController id="Ew7-hx-Ngn" sceneMemberID="viewController">
+                <viewController id="Ew7-hx-Ngn" customClass="WebViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eqp-2c-erO">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" id="Xva-P8-mGH">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="ufe-x2-SuJ"/>
+                    <navigationItem key="navigationItem" id="ufe-x2-SuJ">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="EIV-TC-gsN">
+                            <connections>
+                                <action selector="refresh:" destination="Ew7-hx-Ngn" id="RDc-cq-gzX"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="webView" destination="Xva-P8-mGH" id="gpC-r2-8IQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oNp-ZY-YKB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
