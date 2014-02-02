@@ -132,6 +132,30 @@ Accusamus pariatur tempor hoodie occaecat, synth pork belly umami deserunt quino
                                     <segue destination="Ew7-hx-Ngn" kind="push" id="QhK-3b-drx"/>
                                 </connections>
                             </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MailCell" textLabel="RDf-x7-wSr" imageView="YMd-kR-UNC" style="IBUITableViewCellStyleDefault" id="DQC-mu-bxB">
+                                <rect key="frame" x="0.0" y="130" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DQC-mu-bxB" id="U11-8x-xdr">
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Email" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="RDf-x7-wSr">
+                                            <rect key="frame" x="55" y="0.0" width="230" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="MailIcon" id="YMd-kR-UNC">
+                                            <rect key="frame" x="15" y="9" width="25" height="25"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="Mqo-qm-8tg" kind="push" id="qYq-x1-xvI"/>
+                                </connections>
+                            </tableViewCell>
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="tSd-Ah-i8K" id="4iI-Ag-q3j"/>
@@ -143,6 +167,50 @@ Accusamus pariatur tempor hoodie occaecat, synth pork belly umami deserunt quino
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uww-sl-I65" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="997" y="-168"/>
+        </scene>
+        <!--View Controller - Email Me-->
+        <scene sceneID="2nr-ux-2YQ">
+            <objects>
+                <viewController id="Mqo-qm-8tg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hPh-Zt-hIC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Your Name" minimumFontSize="17" id="o6s-0B-lye">
+                                <rect key="frame" x="60" y="65" width="246" height="43"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="From:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kas-9e-sq6">
+                                <rect key="frame" x="10" y="65" width="45" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" id="S8T-vT-d6b" userLabel="Border">
+                                <rect key="frame" x="10" y="108" width="310" height="1"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.78154721469999999" green="0.78154721469999999" blue="0.78154721469999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" id="bDT-Ip-Y0l">
+                                <rect key="frame" x="5" y="109" width="310" height="409"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" enablesReturnKeyAutomatically="YES"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Email Me" id="wbx-NF-2H7">
+                        <barButtonItem key="rightBarButtonItem" title="Send" id="gr3-D3-7ec"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Icq-qY-8Ml" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1532" y="-607"/>
         </scene>
         <!--Web View Controller-->
         <scene sceneID="rdQ-31-7CZ">
@@ -173,7 +241,7 @@ Accusamus pariatur tempor hoodie occaecat, synth pork belly umami deserunt quino
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oNp-ZY-YKB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1504" y="-168"/>
+            <point key="canvasLocation" x="2052" y="-168"/>
         </scene>
         <!--View Controller - Portfolio-->
         <scene sceneID="d72-4C-A8f">
@@ -213,6 +281,7 @@ Accusamus pariatur tempor hoodie occaecat, synth pork belly umami deserunt quino
     <resources>
         <image name="ContactTab" width="25" height="25"/>
         <image name="FemaleProfileTab" width="25" height="25"/>
+        <image name="MailIcon" width="25" height="25"/>
         <image name="PortfolioTab" width="25" height="25"/>
         <image name="ProfileBackground" width="320" height="165"/>
         <image name="ProfilePhoto" width="100" height="100"/>

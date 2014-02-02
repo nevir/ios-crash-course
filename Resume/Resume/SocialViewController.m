@@ -47,16 +47,37 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     // Return the number of sections.
-    return 1;
+    return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    // Return the number of rows in the section.
-    return [SocialInfo allSocialInfo].count;
+    if (section == 0)
+    {
+        // Email
+        return 1;
+    } else {
+        // Social links
+        return [SocialInfo allSocialInfo].count;
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.section == 0) {
+        return [self tableView:tableView emailCellForRowAtIndexPath:indexPath];
+    } else {
+        return [self tableView:tableView socialNetworkCellForRowAtIndexPath:indexPath];
+    }
+}
+
+- (UITableViewCell *)tableView:(UITableView*)tableView emailCellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *CellIdentifier = @"MailCell";
+    return [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView socialNetworkCellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"SocialInfoCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
