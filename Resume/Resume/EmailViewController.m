@@ -7,6 +7,7 @@
 //
 
 #import "EmailViewController.h"
+#import <sendgrid.h>
 
 @interface EmailViewController ()
 
@@ -81,7 +82,20 @@
 
 - (IBAction)send:(id)sender
 {
+#warning Make sure to set your Sendgrid username and password here.
+    sendgrid *message = [sendgrid user:@"username" andPass:@"password"];
 
+    // If any of these fields are missing, sendgrid will throw an exception when trying to send.
+#warning Also, set your email address properly for both the to: and from: fields.
+    message.to = @"your@email.com";
+    message.from = @"your@email.com";
+    message.subject = [NSString stringWithFormat:@"Resume App Message From: %@\n\n",
+                       self.senderTextField.text];
+    message.text = self.bodyTextView.text;
+    message.html = self.bodyTextView.text;
+
+    [message sendWithWeb];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
